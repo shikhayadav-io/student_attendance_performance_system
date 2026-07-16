@@ -1,25 +1,36 @@
+
+from student import register_student, view_students
+from attendance import mark_attendance
+from performance import add_marks, view_performance
 print("===== Student Attendance & Performance Management System =====")
 
 while True:
     print("\n1. Student Registration")
-    print("2. Attendance Management")
-    print("3. Performance Evaluation")
-    print("4. Exit")
+    print("2. View students")
+    print("3. Attendance Management")
+    print("4. Performance Evaluation")
+    print("5. View Performance Report")
+    print("6. Exit")
 
     choice = input("Enter your choice: ")
 
     if choice == '1':
-        print("Student Registration Module")
+        register_student()
 
     elif choice == '2':
-        print("Attendance Management Module")
+        view_students()
 
     elif choice == '3':
-        print("Performance Evaluation Module")
+        mark_attendance()
 
     elif choice == '4':
-        print("Thank you!!!")
-        break
+        add_marks()
 
+    elif choice == '5':
+        view_performance()
+    
+    elif choice == '6':
+        print("Thankyou!!")
+        break
     else:
         print("Invalid choice.")
