@@ -1,3 +1,8 @@
 
-
-Diksha Yadav,85.0
+Shaurya Pratap Singh, 88
+Sakshi Yadav,85.0
+Priyansh Yadav, 75
+Diksha Yadav, 91
+Pranjal Singh, 76.5
+Pranjali Singh, 93
+Mayank Yadav, 56

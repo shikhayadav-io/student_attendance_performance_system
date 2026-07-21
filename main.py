@@ -2,6 +2,8 @@
 from student import register_student, view_students,search_student
 from attendance import mark_attendance
 from performance import add_marks, view_performance
+from report import generate_report
+
 print("===== Student Attendance & Performance Management System =====")
 
 while True:
@@ -11,7 +13,8 @@ while True:
     print("4. Performance Evaluation")
     print("5. View Performance Report")
     print("6. Search Student")
-    print("7. Exit")
+    print("7. Student Report")
+    print("8. Exit")
 
     choice = input("Enter your choice: ")
 
@@ -33,6 +36,8 @@ while True:
     elif choice == '6':
         search_student()
     elif choice == '7':
+        generate_report()
+    elif choice == '8':
         print("Thankyou!!")
         break
     else:
