@@ -22,10 +22,19 @@ def generate_report():
         print("\nNo students Registered.")
     try:
         with open("attendance.txt","r") as file:
-            for line in file:
-                student_name,status = line.strip().split(",")
-                if student_name.lower() == name.lower():
-                    print(status)
+            for line in file: 
+                if line.startswith("#"):continue
+                data = line.strip().split(",")
+                if len(data) == 3:
+                    student_name = data[0]
+                    total = int(data[1])
+                    present = int(data[2])
+                    if student_name.lower() == name.lower():
+                    
+                     absent  = total - present
+                     percentage = (present/total)*100
+                     print(f"\nAttendance: Total Days: {total}, \nPresent: {present}, \nAbsent:{absent}, Percentage: {percentage:.2f}%")
+                     break
     except FileNotFoundError:
         print("No Attendance records found.")
         print("\nMarks:")
@@ -33,29 +42,29 @@ def generate_report():
     try:
         with open("performance.txt","r")as file:
             for line in file:
+                if line.startswith("#"):continue
                 student_name, student_marks = line.strip().split(",")
                 if student_name.lower() == name.lower():
                     marks = float(student_marks)
-                    print(marks)
+                    print(f"\nMarks: {marks}")
                     break
     except FileNotFoundError:
         print("No marks records found.")
-        print("\nGrade:")
-        if marks >= 90:
+    if marks >= 90:
             grade = "A+"
-        elif marks >= 80:
+    elif marks >= 80:
             grade = "A"
-        elif marks >= 70:
+    elif marks >= 70:
             grade = "B"
-        elif marks >= 60:
+    elif marks >= 60:
             grade = "C"
-        elif marks >= 40:
+    elif marks >= 40:
             grade = "D"
-        else:
+    else:
             grade = "FAIL"
-        print(grade)
-        print("\nResult:")
-        if marks >= 40:
+    print(f"\nGrade: {grade}")
+    print("\nResult:")
+    if marks >= 40:
             print("PASS")
-        else:
+    else:
             print("FAIL")

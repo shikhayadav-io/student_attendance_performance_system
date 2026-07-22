@@ -4,6 +4,8 @@
 - Attendance Management
 - Performance Tracking
 - Attendance Pecentage Calculation
+- View Students
+- Student Report
 
 ## Technologies Used
 

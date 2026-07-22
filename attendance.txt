@@ -1,8 +1,11 @@
-Diksha Yadav,P:
-Sakshi Yadav,2nd
-Shaurya Pratap Singh, 1st
-Priyansh Yadav, 4th
-Diksha Yadav, 3rd
-Pranjal Singh, 7th
-Pranjali Singh, 7th
-Mayank Yadav, LKG
+#JUNE,2026
+Diksha Yadav,20,12
+Sakshi Yadav,20, 6
+Shaurya Pratap Singh,20,13
+Priyansh Yadav,20,12
+Pranjal Singh,20,16
+Pranjali Singh,20,14
+Laxmi Rawat,20,0
+Mayank Yadav,20,0
+Swati Singh,20,0
+Lado Singh,20,0
